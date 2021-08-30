@@ -1,0 +1,96 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Hyperlinks</title>
+ </head>
+ <body>
+    <h1>Síntese da Aula RDE05-Hyperlinks</h1>
+    <h2><font Color="green"> Hiperlinks </font></h2>
+    <p><b>Hyperlink ou link</b></p>
+    <p> É uma referência dentro de um documento em hipertexto para outras partes do mesmo documento, outros documentos, arquivos ou endereço eletrônico.</p>
+    <p>Os links podem ser:</p>
+    <li>Externos ou Remotos</li>
+    <li>Internos</li>
+    <li>Locais</li>
+    <li>Com Endereços de Correio ou Arquivos</li>
+    <h2><b>MARCAÇÃO DE HIPERLINKS</b></h2>
+    <p>A marcação de hiperlinks acontece utilizando a <b>tag &lt;a&gt;</b> e a propriedade <b>href</b> que faz a referência para ao conteúdo desejado. </p>
+    <br><b>Sintaxe</b>
+    <p><figure>
+        <img src="img/MarcaçãoHiperlink.jpeg"> 
+        </figure>
+    </p>
+    <li><b>&lt;a href&gt;</b> - Indica que vai ter um hiperlink;</li>
+    <li><b>"endereço"</b> - Indica o endereço externo/interno da própria página;</li>
+    <li><b>Conteúdo Referenciado Clicável</b> - Indica a referência sobre o link.</li>
+    <h2><b>HIPERLINKS EXTERNOS OU REMOTOS</b></h2>
+    <p>São <b>links</b> que referenciam sites ou páginas da web. Na propriedade <b>href</b> utilizamos a <b>URL(Uniform Resource Locator) para a referência que desejamos.</b></p>
+    <br><b>Sintaxe</b>
+    <p><figure>
+        <img src="img/HyperlinkExterno.jpeg">
+         </figure>
+    </p>
+    <li><b>&lt;a href&gt;</b> - Indica a referência para URL.</li>
+    <br><figure>
+        <img src="img/Blank.jpeg">
+        </figure>
+    <li><b>target="_blank"</b> - Realiza a abertura do link em outra aba.</li>
+    <br><figure>
+        <img src="img/Self.jpeg">
+        </figure>
+    <li><b>target="_self"</b> - Realiza a abertura do link na própria página.</li>
+    <br><figure>
+        <img src="img/hreflang.jpeg">
+        </figure>
+    <li><b>rel="external"</b> - Indica que é referente ao um link externo, está ligando para alguma parte em algum outro lugar;</li>
+    <li><b>hreflang</b> - Define qual é a linguagem e ativa a tradução caso a pessoa precise.</li>
+    <h2><b>HIPERLINKS INTERNOS</b></h2>
+    <p>São <b>links que apontam</b> a um lugar diferente <b>dentro da mesma página</b> e possibilita acessar diferentes <b>parágrafos ou seções</b> quando o documento é extenso.</p>
+    <br><b>Sintaxe</b>
+    <p><figure>
+        <img src="img/HyperlinkInterno.jpeg">
+         </figure>
+    </p>
+    <li><b>"#referencia"</b> - Uma palavra para indicar a referência,</li>
+    <li><b>a name="referencia"</b> - Indica a marcação para o navegador encontrar a ligação e fazer o link interno, através da mesma palavra de referência.</li> 
+    <h2><b>HIPERLINKS LOCAIS</b></h2>
+    <p>São<b> links que apontam</b> para outras páginas dentro de um <b>mesmo site.</b> </p>
+    <br><b>Sintaxe</b>
+    <p><figure>
+        <img src="img/HyperlinkLocal.jpeg">
+         </figure>
+    </p>
+    <li><b>"arquivo.html"</b> - Vai realizar a busca dos arquivos dentro da pasta utilizada.</li>
+    <h2><b>HIPERLINKS EM IMAGENS</b></h2>
+    <p>É possível realizar hiperlinks imagens envolvendo<b> a tag de imagem com a tag de hiperlink.</b></p>
+    <br><b>Sintaxe</b>
+    <p><figure>
+        <img src="img/HyperlinkImagem.jpeg">
+         </figure>
+    </p>
+    <li><b>img src="imagem.jpg"</b> - Ao invés do conteúdo, coloca-se a tag de imagem para abrir a imagem.</li>
+    <h2><b>HIPERLINKS PARA DOWNLOADS DE ARQUIVOS</b></h2>
+    <p>São <b>links que apontam </b> para arquivos e possibilitam realizar <b>download</b> deste arquivos</p>
+    <br><b>Sintaxe</b>
+    <p><figure>
+        <img src="img/HyperlinkDownloadsdearquivos.jpeg">
+         </figure>
+    </p>
+    <li><b>"arquivo.extensão"</b> - Onde ele está localizado, como o servidor ou em uma pasta no computador;</li>
+    <li><b>download</b> - Indicando que vai ser realizado um download;</li>
+    <li><b>"arquivo.extensão"</b> - Indica o tipo da extensão do arquivo;</li>
+    <li><b>type="tipo"</b> - Indica a Média Timer que é uma identificação de  que tipo é esse arquivo.</li>
+    <h2><b>HIPERLINKS PARA ENDEREÇO ELETRÔNICO</b></h2>
+    <p>São <b>links que apontam </b> para um endereço eletrônico</p>
+    <br><b>Sintaxe</b>
+    <p><figure>
+        <img src="img/HyperlinkEndereçoEletronico.jpeg">
+         </figure>
+    </p>
+    <li><b>"mailto"</b> - Indica o email para e em seguida o qual deseja.</li>
+  
+ </body>
+ </html>    
