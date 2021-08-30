@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branches e Hospedagem</title>
+</head>
+<body>
+    <h1>Síntese da Aula RDE07-Branches e Hospedagem</h1>
+    <h2><font Color="green"> Branches</font></h2>
+    <p> São <b>ramificações</b> de um <b>projeto de software</b> ou <b>documento</b> e tem como objetivo o <b>desenvolvimento paralelo</b> de: </p>
+        <ul>
+            <li>Novas funcionalidades;</li>
+            <li>Correção de problemas;</li>
+            <li>Alteração de código.</li>
+        </ul>
+    <p><b>Branch Master ou main:</b> Braço principal de um projeto em um repositório.</p>
+    <p><b>Branch Secundária:</b> Braço secundário de um projeto em um repositório.</p>
+    <p><figure>
+        <img src="img-branches&hospedagem/ExplicaçãoBranches.jpeg"> 
+        </figure>
+    </p>
+    <p>Primeiramente, começamos a desenvolver o projeto, cria uma versão e faz um commit, salvando a criação da versão 1, isso está no Braço principal. Porém ai realizar uma alteração na brache master ocorrá erro, visto que, no mesmo deram usuários acessando naquele momento, acarretando em problema. Por isso, é necessário ter uma versão estável na Branch Master, enquanto a equipe do software realiza alterações através do repositório da Branch Secundária, que não irá acarretar em alterações direta na da Branch Master. Por fim, depois de concluirem as alterações é necessário realizar o merge, ou seja, a mesclagemcom a Branch Master e seguirem em fase de produção sem que ocorra qualquer tipo de problema. </p>
+
+    <h2><b>CRIANDO BRANCHES</b></h2>
+    <p>Primeiro passo é necessário criar um repositório no GitHub, após publicar, ir para o Visual Studio.</p>
+    <p>Agora para criar um branch:</p>
+    <p>No GitHub Desktop, com a branch main selecionada, escolha a opção New branch e nomeia.<p>
+        <p><figure>
+            <img src="img-branches&hospedagem/CriandoBranchsecundaria01.jpeg"> 
+            </figure>
+        </p>
+    <p>Após no seu repositório no Visual Studio realiza as alterações, em seguida não se esqueça de no GitHub Desktop realizar o commi dessas alterações, na conta do GitHub em um navegador poderá observar a criação do branch.</p>
+    <h2>CRIANDO BRANCH DO BRANCH MAIN:</h2>
+    <p>Podemos realizar um branch através do branch main, realizando os mesmos passos que foram utilizado na criação do anterior, selecionado o Branch Main em seguida criar um novo branch:</p>
+        <p><figure>
+            <img src="img-branches&hospedagem/CriandoBranchsecundaria02.jpeg">
+            </figure>
+        </p>
+    <p>Escolhe o branch que realiza fazer o branch dele e depois selecione criar. No Visual Studio realiza alterações e depois o commi no GitHub Desktop.</p>
+    <p>Agora selecione o Branch Main:</p>
+        <p><figure>
+            <img src="img-branches&hospedagem/SelecionandoBranchMain.jpeg">
+            </figure>
+        </p>
+    <p>Para poder realizar a junção do branch secundária com o Branch Master, precis ser realizado o merge.Então na aba de Branch selecione Merge into current branch:</p>
+        <p><figure>
+            <img src="img-branches&hospedagem/MergeBranch.jpeg">
+            </figure>
+        </p>
+    <p>Agora selecionando o Branch secundaria-01 para realizar o merge:</p>
+        <p><figure>
+            <img src="img-branches&hospedagem/MergeBrachsecundaria01.jpeg">
+            </figure>
+        </p>
+   <p>Em seguida realizaremos o segundo branch, selecionando ele:</p>
+        <p><figure>
+            <img src="img-branches&hospedagem/MergeBrachsecundaria02.jpeg">
+            </figure>
+        </p>
+    <p>Nota-se um erro, por isso se direncione para o Visual Studio, e nele mostrará qual é o erro, isso aconteceu porque existe dois códigos e eles estão separados ao tentar juntar, mostrará a parte que foi alterada no outro Branch, assim ao selecionar na opção Accept Both Charges, ocorrerá para ambos a mudança, por fim apenas realizar o commit e push:</p>
+        <p><figure>
+            <img src="img-branches&hospedagem/ErroMergesecundaria02.jpeg">
+            </figure>
+        </p>
+    <p>No GitHub Desktop aparecerá que o problema foi resolvido e o merge acontecerá e para finalizar basta apenas realizar o update from main:</p>
+        <p><figure>
+            <img src="img-branches&hospedagem/ConcluidoMergesecundaria02.jpeg">
+            </figure>
+        </p>
+        <h2><font Color="green"> Hospedagem</font></h2>
+        <p>É de extrema importância realizar a hospedagem, porque ela consolida e digamos finaliza o trabalho desenvolvido, é como se fosse colocado o seu site em algum servidor e ele colocará em produção, ou seja, o usuário que tenha acesso a internet poderá acessar o seu site.</p>
+        <p>Para hospedar deve-se pagar pelo serviço, entre tanto o GitHub Pags oferece hospedagem gratuita de sites. Basta criar uma conta e um repositório público e terá a URL.</p>
+        <p>Nesse caso é necessario acessar a conta no GitHub no navegador, selecionar um repositório e a opção de setting.</p>
+        <p><figure>
+            <img src="img-branches&hospedagem/GitHubPages.jpeg">
+            </figure>
+        </p>
+    <p>Ao entrar na página do GitHub Pages, selecione o Branch Main e save. <br>Após realizar esses passos, será disponibilizado um link, onde abrirá o seu repositório na página do nagevador em hipertexto.</p>
+    
+</body>
+</html>
