@@ -13,14 +13,17 @@
         <p><a href=#OutroSiteDentroDoSite>Incorporar outro site dentro do site</a></p>
         <p><a href=#AudioNoSite>Embutir áudio no site</a></p>
         <p><a href=#VideoNoSite>Incorporar vídeos no site</a></p>
+        <p><a href=#TagVideo>Tag vídeo</a></p>
+        <p><a href=#TagAudio>Tag audio</a></p>
+        <p><a href=#TagPicture>Tag picture</a></p>
+        <p><a href=#Sintaxes>Sintaxes</a></p>
 
         <h1>Incorporando Multimídias ao site</h1>
 
         <h2><a name="Multimídia"></a><font Color="green">Multímidias</font></h2>
-
         <p>É uma forma de comunicação que combina diferentes formas de conteúdo, como <b>texto, áudio, imagens, animações ou vídeos</b> em uma única apresentação.</p>
-        <h2><a name="Tagiframe"></a><font Color="green">Tag iframe</font></h2>
 
+        <h2><a name="Tagiframe"></a><font Color="green">Tag iframe</font></h2>
         <p>É usada para incorporar outro documento ao documento HTML, tais como vídeos, outros sites, áudios, imagens, entre outros.</p>
 
         <h3><a name="OutroSiteDentroDoSite"></a><font Color="green">Incorporar outro site dentro do site</font></h3>
@@ -28,15 +31,68 @@
         <iframe src="http://irati.ifpr.edu.br" height="300" width="300"></iframe>
 
         <h3><a name="AudioNoSite"></a><font Color="green">Embutir áudio no site</font></h3>
-        <p>É bastante utilizado nos sites como de PodCast, onde poderá ter no site áudios explicando sobre um determinado assunto, como de tecnologia, entre outros. </p>
+        <p>É bastante utilizado nos sites como de PodCast, onde poderá ter no site áudios explicando sobre um determinado assunto, como de tecnologia, entre outros.<br>Para poder implementar um áudio no site é necessário abrir uma plataforma com o conteúdo desejado e em compartilhar, escolher a opção <b>Incorporar</b> a mesma disponibiliza para o usuário um código com a tag &lt;iframe&gt; com o tamanho ideal, nesse exemplo usando o soundcloud que permite realizar a hospedagem. </p>
         <iframe width="30%" height="30%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/50984741&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/juan_mj_10" title="Juan Juncos" target="_blank" style="color: #cccccc; text-decoration: none;">Juan Juncos</a> · <a href="https://soundcloud.com/juan_mj_10/led-zeppelin-rock-n-roll" title="Led Zeppelin - Rock N&#x27; Roll" target="_blank" style="color: #cccccc; text-decoration: none;">Led Zeppelin - Rock N&#x27; Roll</a></div>
 
         <h3><a name="VideoNoSite"></a><font Color="green">Incorporar vídeos no site</font></h3>
         <p> É utilizado por ser bastante prático e que atualmente não compensa ter um servidor dedicado para hospedar os vídeos, por terem durações longas possui um espaço de armazenamento maior.<br>Para poder implementar um vídeo no site é necessário abrir uma plataforma com o conteúdo desejado e em compartilhar, escolher a opção <b>Incorporar</b> a mesma disponibiliza para o usuário um código com a tag &lt;iframe&gt; com o tamanho ideal, nesse exemplo usando o YouTube que permite realizar de forma gratuita para realizar a hospedagem.</p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/fYJl-7jRzuw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+        <h2><a name="TagVideo"></a><font Color="green">Tag vídeo</font></h2>
+        <p>É utilizado para poder inserir vídeos que se encontra na máquina localmente ou no servidor do usuário.</p>
+        <video poster="video-Multimidias/Bike.jpg" controls>
+            <source src="video-Multimidias/_Bike.mp4" type="video/mp4">
+            <source src="video-Multimidias/Bike.webm" type="video/webm">
+            <source src="video-Multimidias/Bike.ogv" type="video/ogv">
+        </video>
 
+        <h2><a name="TagAudio"></a><font Color="green">Tag audio</font></h2>
+        <p>É utilizado para poder inserir áudios qu se encontra na máquina localmente ou no servidor do usuário.<br>Existe uma biblioteca de áudio do YouTube que permite utilizar sem que tenha direitos autorais.</p>
+        <audio preload="metadata" controls>
+            <source src="audio-Multimidias/Hey Sailor - Letter Box.mp3" type="audio/mp3">
+            <source src="audio-Multimidias/Hey Sailor - Letter Box.ogg" type="audio/ogg">
+            <source src="audio-Multimidias/Hey-Sailor-Letter-Box.wav" type="audio/wav">
+        </audio>
 
-        
+        <h2><a name="TagPicture"></a></a><font Color="green">Tag picture</font></h2>
+        <p>É utilizado para poder agrupar várias imagens.</p>
+        <picture>
+            <source media="(max-width:500px)" srcset="img-Multimidias/bike_110.jpg">
+            <source media="(max-width:320px)" srcset="img-Multimidias/bike_320.jpg">
+            <source media="(max-width:1000px)" srcset="img-Multimidias/bike_640.jpg">
+            <img src="img-Multimidias/bike_full.jpg" alt="Mtb Por-do-Sol">
+        </picture>
+
+        <h3><a name="Sintaxes"></a><font Color="green">Sintaxes no Visual Studio:</font></h3>
+            <ul>
+                <li><b>Tag iframe</b></li>
+                    <figure>
+                        <img src="img-Multimidias/Sitaxe_TagIframe.jpeg"width="50%" height="50%" alt="">
+                    </figure>
+                <li><b>Incorporar outro site dentro do site</b></li>
+                    <figure>
+                        <img src="img-Multimidias/Sintaxe_OutroSiteDentroDoSite.jpeg"width="50%" height="50%" alt="">
+                    </figure>
+                <li><b>Embutir áudio no site</b></li>
+                    <figure>
+                        <img src="img-Multimidias/Sitaxe_AudioNoSite.jpeg"width="50%" height="50%" alt="">
+                    </figure>
+                <li><b>Incorporar vídeos no site</b></li>
+                    <figure>
+                        <img src="img-Multimidias/Sintaxe_VideoNoSite.jpeg"width="50%" height="50%" alt="">
+                    </figure>
+                <li><b>Tag vídeo</b></li>
+                    <figure>
+                        <img src="img-Multimidias/Sitaxe_TagVideo.jpeg"width="50%" height="50%" alt="">
+                    </figure>
+                <li><b>Tag audio</b></li>
+                    <figure>
+                        <img src="img-Multimidias/Sitaxe_TagAudio.jpeg"width="50%" height="50%" alt="">
+                    </figure>
+                <li><b>Tag  picture</b></li>
+                <figure>
+                    <img src="img-Multimidias/Sitaxe_TagPicture.jpeg"width="50%" height="50%" alt="">
+                </figure>
+            </ul>
 </body>
 </html>
