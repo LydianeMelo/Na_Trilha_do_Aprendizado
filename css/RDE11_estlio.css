@@ -1,0 +1,82 @@
+div{
+    background-color: lightsteelblue;
+    margin:10px;
+}
+span{
+    font-weight:bold;
+    background-color: rgba(134, 162, 180);
+}
+h2{
+    color:midnightblue;
+}
+h3{
+    color:midnightblue;
+}
+h1#principal{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align:center;
+    color:rgb(24, 34, 48);
+    background-color: rgb(58, 107, 139);
+    border: 2px solid rgb(27, 41, 58);
+}
+div.agrupamento{
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(29, 30, 44);
+    background-color: lightsteelblue;
+    border:2px solid rgb(27, 41, 58);
+    margin:20px;
+    padding:10px;
+}
+.exemplo1{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(115, 5, 158);
+    border: 1px solid  rgb(42, 4, 46);
+    margin: 10px;
+    padding: 10px;
+    width: 80px;
+    height: 30px;
+}
+.exemplo2{
+    font-family: 'Courier New', Courier, monospace;
+    background-color:chocolate;
+    border: 1px solid orangered;
+    margin:10px;
+    padding:10px;
+    width:100px;
+    height:50px;
+}
+.personalizado{
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(18, 64, 99);
+    background-color: rgba(134, 162, 180);
+    margin: 30px;
+    padding:20px;
+  
+}
+.personalizado:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightsteelblue;
+    border:2px solid rgb(27, 41, 58);;
+    margin: 20px;
+    padding: 10px;
+}
+.pseudo > span{
+    display: none;
+}
+.pseudo:hover > span{
+    display: block;
+}
+a{
+    color:midnightblue;
+}
+a#hou:hover{
+    color:rgb(18, 75, 128);
+    background-color:rgb(33, 99, 126) ;
+}
+a#act:active{
+    color: rgb(30, 52, 85);
+    background-color:lightsteelblue;
+}
+a#vis:visited{
+    color:rgb(16, 146, 140)
+}

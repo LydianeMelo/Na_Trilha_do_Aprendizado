@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores Personalizados</title>
+    <link rel="stylesheet" href="css/RDE11_estlio.css">
+</head>
+<body>
+    <div>
+        <h1 id="principal">Elementos block-level, inline e Seletores Personalizados</h1>
+    </div>
+
+    <div class="agrupamento">
+        <h2>Agrupamento de elementos</h2>
+        <p>Os elementos &ltdiv&gt e &ltspan&gt são usados para agrupar e estruturar um documento e são frequentemente usados em conjunto com os atributos class e id.</p>
+    </div>
+
+    <div class="agrupamento">
+        <h2>Elementos Block-level</h2>
+        <p>O elemento &ltdiv&gt é um elemento block-level. Tem a função de agrupar elementos html, definindo blocos de contéudo sempre iniciando uma nova linha e ocupando toda a linha.<br>Exemplo:</p>
+            <div class="exemplo1">Bloco 1</div>
+            <div class="exemplo2">Bloco 2</div>
+        <h3>Processos para realizar o envelopamento com a tag div:</h3>
+        <ul>
+            <li>Primeiramente para aproveitar e envelopar tuas tags ao mesmo tempo é necessário ficar pressionado o botão Alt do teclado sem parar;</li>
+            <li>Selecionar o conteúdo e solta o clique do mouse;</li>
+            <li>Seleciona o outro conteúdo para ocorrer essa divisão de tags e não ser apenas uma;</li>
+            <li>Presione as teclas Ctrl+Shift+p;</li>
+            <li>Selecione a opção quebrar linha com abreviação;</li>
+            <li>Por fim digite a tag div.</li>
+        </ul>
+        <h3>Desse jeito:</h3>
+            <p><figure>
+                <img src="img-SeletoresP/DivEnvelopamento.jpeg"> 
+            </figure>
+        <p>Entretanto não fica ainda tal perceptivo, nesse caso realizamos algumas estilizações:
+        <br>Primeiramente é necessário digitar um link para realizar a criação dele usando o método Externo:</p>
+            <figure>
+                <img src="img-SeletoresP/linkExterno.jpeg"> 
+            </figure> 
+        <p>No VS do arquivo CSS colocamos a estilização desejada e no Navegador aparecerá com a estilização realizada, nesse caso com a cor de fundo roxo e um espaçamento realizado apartir do comando margin:</p>
+            <figure>
+                <img src="img-SeletoresP/DivVSeNavegador.jpeg"> 
+            </figure> 
+    </div>
+
+    <div class="agrupamento">
+        <h2>Elementos Inline</h2>
+        <p>O elemento &ltspan&gt é um elemento inline. É um <span>elemento neutro</span> embutido que marcam um bloco dentro de uma mesma linha ou parágrafo. Pode ser usado pelo CSS para estilização de partes específicas do conteúdo do documento HTML, ou seja, um marca-texto destacando uma parte do conteúdo ali apresentado.</p>
+        <h3>Processos para realizar o envelopamentocom a tag span</h3>
+        <ul>
+            <li>Selecionar o conteúdo desejado;</li>
+            <li>Presione as teclas Ctrl+Shift+p;</li>
+            <li>Selecione a opção quebrar linha com abreviação;</li>
+            <li>Por fim digite a tag span.</li>
+            <li>No arquivo CSS no VS o comando font-weight bold determinará em negrito.</li>
+        </ul>
+        <h3>Desse jeito:</h3>
+        <figure>
+            <img src="img-SeletoresP/SpanEnvelopamento.jpeg"> 
+        </figure>
+    </div>
+
+    <div class="personalizado">
+        <h2>Seletores Personalizados</h2>
+            <p>Possibilita personalizar tags do documento HTML para estilização. Temos os seletores do tipo classe e o seletor do tipo id</p>
+        <h3>Seletor do tipo id</h3>
+        <p>O seletor de id usa o atributo id de um elemento HTML para selecionar um elemento específico. Cada id é única. O seletor de id é representado por “#”.</p>
+        <h3>Processos para realizar a estilização usando a id</h3>
+        <ul>
+            <li> Primeiramente na tag desejada coloca id e entre aspas o nome desejado, lembrando que ela deve ser única;</li>
+            <li>No arquivo de estilização no VS, coloca a tag que é no que se refere o "#" mas o nome colocado, nesse caso foi usado principal;</li>
+            <li>E realiza a estilização desejada;</li>
+            <li>Nesse exemplo, foi realizado uma alteração de fonte com o comando font-family;</li>
+            <li>Obs:uma fonte sans-serif são mais fáceis e mas legíveis;</li>
+            <li>O comando text-align para centralizar o texto;</li>
+            <li>O comando rgb para dar a cor da fonte do texto que significa a mitura das cores rgb(red:vermelho, green:verde, blue:azul);</li>
+            <li>O comando background-color é a cor que ficará no fundo do título;</li>
+            <li>O comando border será a borda.</li>
+        </ul>
+        <h3>Desse jeito:</h3>
+        <figure>
+            <img src="img-SeletoresP/idprincipal.jpg"> 
+        </figure>
+
+        <h3>Seletor do tipo classe</h3>
+        <p>O seletor de classe seleciona elementos HTML com um atributo de classe específico.O seletor de classe é representado por um ponto, “.”, e tem como alvo elementos com um determinado valor para seu atributo class. Para casos em que haja necessidade de mais de um elemento com a mesma identificação usamos o atributo class.</p>
+        <h3>Processos para realizar a estilização usando a classe</h3>
+        <ul>
+            <li>Quando tem várias tags e deseja fazer a alteração que se encontra ali, porém não todas da mesma forma, sendo dividida em blocos, nesse exemplo;</li>
+            <li>Com a tag do div dará um nome qualquer para a classe;</li>
+            <li>Exemplo: div class=agrupamento no mesmo div ocorrerá uma divisão com os blocos que se encontra ali;</li>
+            <li>Exemplo1: div class=exemplo1 para o Bloco 1;</li>
+            <li>Exemplo2: div class=exemplo2 para o Bloco 2;</li>
+            <li>No arquivo de estilização no VS, coloca a tag que é no que se refere o "." mais o nome colocado, nesse caso foi usado div.agrupamento;</li>
+            <li>E realiza a estilização desejada;</li>
+            <li>Ainda no arquivo do CSS, com a outra classe nomeada, nesse caso para o bloco 1, podendo utilizar .exemplo1 e realizar a estilização;</li>
+            <li>E por fim a útilima classe referente ao bloco 2, ocorrerá o mesmo processo que do bloco 1, mas podendo ter a estelização diferente.</li>
+        </ul>
+        <h3>Desse jeito:</h3>
+        <figure>
+            <img src="img-SeletoresP/Div.classagrupamento.jpeg"> 
+        </figure>
+        <figure>
+            <img src="img-SeletoresP/Div.classexemplo1.jpeg">
+        </figure>
+
+    <div class="pseudo">
+        <h3><a name="pseudo-classes">Pseudo-Classes</a></h3>
+           <p> Usada para definir um estado especial de um elemento. O seletor de classe é representado por dois pontos, “:”. <br>Estão relacionados a um elemento ou uma classe.<br>Existe várias opções de pseudo-classes, entre elas se encontra a hover, active e visited, abaixo utilizando a hover, que ao passar o mouse encontra os link sobre cada uma dela.</p>
+
+        <span>
+            <p>Exemplo de Pseudo-Classes:</p>
+            <p><a id="hou" href="https://www.w3schools.com/cssref/sel_hover.asp" hreflang="en" target="_blank">HOVER</a></p>
+            <p><a id="act" href="https://www.w3schools.com/cssref/sel_active.asp" hreflang="en" target="_blank">ACTIVE</a></p>
+            <p><a id="vis" href="https://www.w3schools.com/cssref/sel_visited.asp" hreflang="en" target="_blank">VISITED</a></p>
+        </span>
+        <h3>Processos para realizar a estilização usando a pseudo-classe hover</h3>
+        <ul>
+            <li>Primeiramente escolha a parte que deseja colocar a hover, ou seja, quando colocar o mouse em cima aarecerá aquele conteúdo;</li>
+            <li>Nesse exemplo vai ser utilizado a classe do personalizado;</li>
+            <li>No arquivo de estilização no VS, coloca a tag nomeada mais o sinal da pseudo-classes ":", nesse caso foi usado .personalizado:hover;</li>
+            <li>E por fim realiza a estilização desejada;</li>
+            <li>Quando passa o mouse na tela do navegador fica conforme a estilização realizada.</li>
+        </ul>
+        <figure>
+            <img src="img-SeletoresP/hover.jpeg">
+        </figure>
+        <p>Outro exemplo seria utilizar o comando display:none  dentro da tag desejada, que irá sumir com esse conteúdo. E para exibir o conteúdo ao passar com o mouse utiliza o comando display:block dentro do pseudo-classe hover:</p>
+        <figure>
+            <img src="img-SeletoresP/displayhover.jpeg">
+        </figure>
+
+    </div>
+        <h3>Pseudo-Elementos</h3>
+        <p>Usado para estilizar partes específicas de um elemento.O seletor de classe é representado por dois pontos seguido de dois pontos, “::”<br>Existe várias possibilidades de pseudo-elementos para utilizar.</p>
+        <h3>Processos para realizar a estilização usando o pseudo-elemento selecction</h3>
+        <ul>
+            <li>Primeiramente escolhe a tag desejada, nesse exemplo foi o h3;</li>
+            <li>Em seguida o pseudo-elemento, que foi selection sendo antes utilizado por dois pontos e mais dois pontoe que denomina um pseudo-elemento;</li>
+            <li>Esse pseudo-elemento ao passar pelo conteúdo h3 le </li>
+            <li> Por fim realiza a estilização desejada.</li>
+        </ul>
+        <figure>
+            <img src="img-SeletoresP/pseudoelementoselection.jpeg">
+        </figure>
+        <p>Outro exemplo seria usar o pseudo-elemento first-letter, em que a primeira letra aparecerá conforme a estilização feita no arquivo CSS, na imagem abaixo está se referindo a primeira letra do parágrafo: </p>
+        <figure>
+            <img src="img-SeletoresP/firstletter.jpeg">
+        </figure>
+    </div>
+    
+</body>
+</html>
