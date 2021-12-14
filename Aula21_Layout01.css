@@ -1,0 +1,54 @@
+body{ /*todo o corpo do site*/
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right,#0b1726,#1f3d64); /*esse background deve ser a direita e coloca as cores do mais claro p/ mais escuro*/
+    width: 90%;
+    margin: 0 auto; /*deixar o texto centralizado automatico de acordo com o navegador ou dispositivo*/
+}
+header{/*cabeçalho*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #161616;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.logo img{ 
+    width: 45%; /*em porcentagem ela se readimensiona automatica no web site quando com o mouse vai alterando a tela do site*/
+    padding-top: 50px;
+}
+.navegacao{
+    overflow: hidden; /*overflow quando tem um conteudo dentro e ele fica ajustado dentro do box, hidden é que caso o conteúdo seja muito grande ele iria colocar uma barrinha de rolagem escondida/// ajusta conteúdo no box e esconde a barra de rolagem*/
+}
+.navegacao a{
+    float: right; /*flutua a direita*/
+    display: block;
+    color: rgb(173, 173, 173);
+    text-decoration: none; /*tira a decoração do texto*/
+    text-align: right; /*alinhamento a esquerda*/
+    padding: 10px 10px;
+}
+.navegacao a:hover{ /*a tag de hiperlink*/
+    color:#E32936;
+    background-color: black;
+}
+.conteudo{
+    float:left;
+    margin:15px 2px 25px 2px;
+    background-color: gainsboro; /*ideal cor puxando pro branco*/
+    width: 30.5%; /*realiza uma conta com base a % do div la em cima*/
+    text-align: justify; /*justificado*/
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px #08101a98; /*efeito de sombra da impressão que o texto esta flutuando */
+}
+.rodape{
+    color:darkgray;
+    font-size: 10px;
+    text-align: center;
+    padding: 20px;
+}
+@media screen and (max-width:800px){
+    .principal, .conteudo{ /*no principal e no conteudo terá as seguintes alterações*/
+        width: 100%;
+        padding: 0;
+    }
+    
+}
