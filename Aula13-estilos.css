@@ -1,0 +1,93 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    height: 100%;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: blue;
+    padding: 20px;
+}
+h1{
+    background-color: darkblue;
+    color: white;
+    width:300px;
+    height: 40;
+    margin: 50px; /*nos 4 cantos a margem*/
+    border: 2px dashed darkgray;
+    padding: 20px;/*espaçamento para nao ficar colado com a margem. USAR BOTAO DIREITO INSPECIONAR*/
+}
+p{
+    display:inline; /*muda o display*/
+    background-color: gray;
+}
+span{
+    display:block; /*ocupa a linha toda sendo dai agr inline*/
+    background-color: blueviolet;
+}
+.box1{
+    position: static; /*não vai sair do lugar definido*/
+    background-color: green;
+    width: 400px;
+    height: 50px;
+}
+.box2{
+    position: relative; /*é realativo aonde ele estava, apartir desses espaçomuda de lugsr e pode ser alterdo com o comando bottom*/
+    background-color: yellow;
+    width: 400px;
+    height: 50px;
+    bottom: 50px;
+    left:450px;
+
+}
+.box3{
+    position: absolute;/*absoluto define onde eu quero colocar*/
+    background-color: tomato;
+    width: 400px;
+    height: 50px;
+    top:500px;
+    left:500px; /*lado esquerdo da margem*/
+
+}
+.box4{
+    position: fixed;/*elemento fixo na pagina*/
+    background-color: orange;
+    width: 400px;
+    height: 50px;
+    top:0px;/*colado no topo*/
+    left:0px;
+
+}
+.box5{
+    position: sticky; /*em relação onde foi definifo */
+    background-color:rebeccapurple ;
+    bottom: 200px;
+    left:150px;
+}
+.layer1{ /*sobrepor uma coisa a outra*/
+    position: relative;
+    background-color: cadetblue;
+    width: 80px;
+    height: 60px;
+    bottom:0;
+    left:25px;
+    display: flex; /*o texto pode ser alterado de posicionamentp*/
+    justify-content: center;
+    align-items: center;
+    z-index:1 ;/*na primeira camada*/
+
+}
+.layer2{
+    position: relative;
+    background-color: rgb(114, 95, 160);
+    width: 80px;
+    height: 60px;
+    bottom:20px;
+    left:50px;
+    display: flex; /*o texto pode ser alterado de posicionamentp*/
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
