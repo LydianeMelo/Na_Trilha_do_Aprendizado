@@ -5,15 +5,16 @@ a1=prompt("Digite o primeiro termo:")
 razao=prompt("Digite a razão: ")
 n=prompt("Digite a quantidade de termos que deseja:")
 PG=a1
-
-
+document.write("A Progressão Geomértica é: ")
 
 for(cont=1;cont<=n;cont++){
-    PG=PG*razao
-    
+
+    if(cont<n){
+        document.write(PG+",")
+    }
+    else{
+        document.write(PG)
+    }
+     PG=PG*razao
     
 }
-
-alert(PG)
-document.write("A Progressão Geomértica é: "+PG)
-
