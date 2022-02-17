@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+    <link rel="stylesheet" href="/css/RDE16_estilo.css">
+    <script type="tex/javascript" src="/JavaScript/js/RDE16.EX01.js"></script>
+
+
+</head>
+<body>
+    <h1>Interessado no Projeto Trilha do Aprendizado</h1>
+    <form name="formulario" action="cadastrar.php" method="post" onsubmit="return Enviar()"> <!--oq vai acontecer quando der um click enviar-->
+        <!--Campo de nome-->
+        <label for="nome">Nome Completo </label>
+        <br><input type="text" id="nome" placeholder="Digite seu nome completo"> <!--dica para o usuário -->
+
+        <!--Campo de email-->
+        <br><br><label for="email">E-mail</label>
+        <br><input type="email" id="email" placeholder="email@gmail.com"> <!--dica para o usuário-->
+
+        <!--Campo de Data nascimento-->
+        <br><br> <label for="datanasc">Data Nascimento</label>
+        <br><input type="date" id="datanasc"> <!--aparece um calendario para o usuario escolher-->
+
+        <!--Campo de comentários-->
+        <br><br> <textarea id="comentario" placeholder="Deixe o seu comentário"> </textarea>
+
+        <!--Botão enviar-->
+        <br><input type="submit" class="enviar" value="Enviar">
+    </form>
+
+
+    <br><button><a href="/index.html">Voltar página anterior</a></button>
+</body>
+</html>
